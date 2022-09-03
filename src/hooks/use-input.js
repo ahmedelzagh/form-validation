@@ -19,7 +19,7 @@ const useInput = (validationRules) => {
     setIsTouched(false);
   };
 
-  return { inputProps: { value, onChange, onBlur }, validationState: { inputIsInvalid, valueIsValid }, reset };
+  return [{ value, onChange, onBlur }, { inputIsInvalid, valueIsValid }, reset];
 };
 
 export default useInput;
